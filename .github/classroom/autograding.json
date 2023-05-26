@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Check for a socre of at least 50",
+      "name": "Check for a score of at least 50",
       "setup": "",
       "run": "mvn -q -B package --file pom.xml andy:run",
       "input": "",
