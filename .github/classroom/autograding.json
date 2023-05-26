@@ -1,12 +1,12 @@
 {
   "tests": [
     {
-      "name": "Check for at least one test",
+      "name": "Check for a socre of at least 50",
       "setup": "",
       "run": "mvn -q -B package --file pom.xml andy:run",
       "input": "",
-      "output": "1/1 passed",
-      "comparison": "included",
+      "output": ".*Final grade: (5.*|6.*|7.*|8.*|9.*|100)\/100.*",
+      "comparison": "regex",
       "timeout": 10,
       "points": 50
     }
